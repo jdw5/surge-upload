@@ -1,3 +1,5 @@
-# Template
+# Surge Upload
+Vue composable
 
-You can rapidly rename all code by searching for and then removing all instances of `overwrite`. This template is configured for Vue.
+## Notice for Inertia
+If using InertiaJS, please ensure the following to allow for chunked uploads (if desired).

@@ -1,25 +1,25 @@
 {
-	"name": "overwrite",
-	"version": "0.0.0",
+	"name": "surge-upload",
+	"version": "0.1.0",
 	"description": "",
 	"keywords": [
 	],
 	"author": "Joshua Wallace",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jdw5/overwrite.git"
+		"url": "https://github.com/jdw5/surge-upload.git"
 	},
 	"type": "module",
-	"main": "./dist/overwrite.umd.cjs",
-	"module": "./dist/overwrite.js",
+	"main": "./dist/surge-upload.umd.cjs",
+	"module": "./dist/surge-upload.js",
 	"types": "./dist/types/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/overwrite.js",
-			"require": "./dist/overwrite.umd.cjs"
+			"import": "./dist/surge-upload.js",
+			"require": "./dist/surge-upload.umd.cjs"
 		}
 	},
-	"homepage": "https://github.com/jdw5/overwrite#readme",
+	"homepage": "https://github.com/jdw5/surge-upload#readme",
 	"files": [
 		"dist"
 	],
@@ -29,10 +29,10 @@
 		"preview": "vite preview"
 	},
 	"peerDependencies": {
-		"query-string": "^8.2.0",
 		"@inertiajs/vue3": "^1.0.0",
 		"axios": "^1.2.0",
-		"vue": "^3.x"
+		"vue": "^3.x",
+        "@mux/upchunk": "^3.3.2"
 	},
 	"devDependencies": {
 		"@types/node": "^18.0.0",
