@@ -1,0 +1,44 @@
+{
+	"name": "overwrite",
+	"version": "0.0.0",
+	"description": "",
+	"keywords": [
+	],
+	"author": "Joshua Wallace",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jdw5/overwrite.git"
+	},
+	"type": "module",
+	"main": "./dist/overwrite.umd.cjs",
+	"module": "./dist/overwrite.js",
+	"types": "./dist/types/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/overwrite.js",
+			"require": "./dist/overwrite.umd.cjs"
+		}
+	},
+	"homepage": "https://github.com/jdw5/overwrite#readme",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc && vite build",
+		"preview": "vite preview"
+	},
+	"peerDependencies": {
+		"query-string": "^8.2.0",
+		"@inertiajs/vue3": "^1.0.0",
+		"axios": "^1.2.0",
+		"vue": "^3.x"
+	},
+	"devDependencies": {
+		"@types/node": "^18.0.0",
+		"@vitejs/plugin-vue": "^5.0.4",
+		"typescript": "^5.2.2",
+		"vite": "^5.1.4",
+		"vue-tsc": "^1.8.27"
+	}
+}
